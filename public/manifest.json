@@ -3,26 +3,7 @@
     "short_name":"pwavue",
     "theme_color":"#4DBA87",
     "icons": [
-      {
-        "src": "img/icons/windows10/Wide310x150Logo.scale-400.png",
-        "sizes": "1240x600"
-      },
-      {
-        "src": "img/icons/windows10/Wide310x150Logo.scale-200.png",
-        "sizes": "620x300"
-      },
-      {
-        "src": "img/icons/windows10/Wide310x150Logo.scale-100.png",
-        "sizes": "310x150"
-      },
-      {
-        "src": "img/icons/windows10/Wide310x150Logo.scale-150.png",
-        "sizes": "465x225"
-      },
-      {
-        "src": "img/icons/windows10/Wide310x150Logo.scale-125.png",
-        "sizes": "388x188"
-      },
+     
       {
         "src": "img/icons/windows10/Square310x310Logo.scale-400.png",
         "sizes": "1240x1240"
@@ -126,26 +107,6 @@
       {
         "src": "img/icons/windows10/StoreLogo.png",
         "sizes": "50x50"
-      },
-      {
-        "src": "img/icons/windows10/SplashScreen.scale-400.png",
-        "sizes": "2480x1200"
-      },
-      {
-        "src": "img/icons/windows10/SplashScreen.scale-200.png",
-        "sizes": "1240x600"
-      },
-      {
-        "src": "img/icons/windows10/SplashScreen.scale-150.png",
-        "sizes": "930x450"
-      },
-      {
-        "src": "img/icons/windows10/SplashScreen.scale-125.png",
-        "sizes": "775x375"
-      },
-      {
-        "src": "img/icons/windows10/SplashScreen.scale-100.png",
-        "sizes": "620x300"
       },
       {
         "src": "img/icons/windows/windows-smallsquare-24-24.png",

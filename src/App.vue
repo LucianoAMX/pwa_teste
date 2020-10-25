@@ -5,7 +5,13 @@
       <router-link to="/about">About</router-link>
     </div>
     <router-view />
-    <v-snackbar bottom right :value="updateExists" :timeout="0" color="primary">
+    <v-snackbar
+      bottom
+      right
+      :value="updateExists"
+      :timeout="-1"
+      color="primary"
+    >
       update
       <v-btn text @click="refreshApp">
         update bt

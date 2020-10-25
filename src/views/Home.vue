@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="ben vindo ao PWA teste" />
+    <HelloWorld msg="ben vindo ao PWA" />
   </div>
 </template>
 

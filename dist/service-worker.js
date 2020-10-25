@@ -17,7 +17,7 @@ importScripts(
   "/precache-manifest.2c1ad6b49fe7693e460f00c2b9b46010.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "tabletestev2"});
+workbox.core.setCacheNameDetails({prefix: "tableteste"});
 
 workbox.core.skipWaiting();
 

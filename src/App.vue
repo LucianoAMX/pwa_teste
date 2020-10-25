@@ -5,9 +5,21 @@
       <router-link to="/about">About</router-link>
     </div>
     <router-view />
+    <v-snackbar bottom right :value="updateExists" :timeout="0" color="primary">
+      update
+      <v-btn text @click="refreshApp">
+        update bt
+      </v-btn>
+    </v-snackbar>
   </v-app>
 </template>
-
+<script>
+import update from "./mixins/update";
+export default {
+  name: "App",
+  mixins: [update]
+};
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

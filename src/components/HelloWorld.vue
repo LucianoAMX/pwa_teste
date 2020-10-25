@@ -1,6 +1,9 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <p>
+      https://dev.to/drbragg/handling-service-worker-updates-in-your-vue-pwa-1pip
+    </p>
   </div>
 </template>
 

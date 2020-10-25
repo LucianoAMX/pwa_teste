@@ -110,6 +110,22 @@ export default {
   },
 
   methods: {
+    close() {
+      this.$store.dispatch("set_dialog", false);
+      this.$nextTick(() => {
+        this.editedItem = Object.assign({}, this.defaultItem);
+        this.editedIndex = -1;
+      });
+    },
+
+    save() {
+      if (this.editedIndex > -1) {
+        Object.assign(this.desserts[this.editedIndex], this.editedItem);
+      } else {
+        this.desserts.push(this.editedItem);
+      }
+      this.close();
+    },
     initialize() {
       this.desserts = [
         {

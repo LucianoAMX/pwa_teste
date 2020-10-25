@@ -12,9 +12,9 @@
       :timeout="-1"
       color="primary"
     >
-      update
+      Nova atualização disponível
       <v-btn text @click="refreshApp">
-        update bt
+        update
       </v-btn>
     </v-snackbar>
   </v-app>

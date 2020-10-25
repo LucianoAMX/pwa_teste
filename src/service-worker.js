@@ -17,7 +17,7 @@ importScripts(
 
 importScripts("/precache-manifest.34ac4d10acc2b37895d84e88b8d62f43.js");
 
-workbox.core.setCacheNameDetails({ prefix: "tableteste" });
+workbox.core.setCacheNameDetails({ prefix: "pwavue" });
 
 /**
  * The workboxSW.precacheAndRoute() method efficiently caches and responds to

@@ -10,7 +10,6 @@
  * and re-run your build process.
  * See https://goo.gl/2aRDsh
  */
-const teste ="1";
 
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
@@ -18,7 +17,7 @@ importScripts(
   "/precache-manifest.b6b61ed973e01133ca11c06bf65dda16.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "tableteste"});
+workbox.core.setCacheNameDetails({prefix: "tabletestev1"});
 
 self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {

@@ -15,7 +15,7 @@ importScripts(
   "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js"
 );
 
-importScripts("/precache-manifest.34ac4d10acc2b37895d84e88b8d62f43.js");
+importScripts("/precache-manifest.34ac4d10acc2b37895d84e88b8d62f44.js");
 
 workbox.core.setCacheNameDetails({ prefix: "pwavue" });
 

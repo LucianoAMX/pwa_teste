@@ -17,7 +17,7 @@ importScripts(
   "/precache-manifest.6f2a66b13c16c05a24244d6c327e93d3.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "tableteste"});
+workbox.core.setCacheNameDetails({prefix: "pwavue"});
 
 self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {

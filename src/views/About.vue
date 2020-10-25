@@ -56,8 +56,6 @@ export default {
     }
   }),
 
-  
-
   created() {
     this.initialize();
   },
@@ -142,10 +140,7 @@ export default {
       this.editedIndex = this.desserts.indexOf(item);
       this.editedItem = Object.assign({}, item);
       this.$store.dispatch("set_dialog", true);
-      alert(this.$store.getters["get_dialog"]);
-    },
-
-    
+    }
   }
 };
 </script>

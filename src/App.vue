@@ -5,7 +5,13 @@
       <router-link to="/about">Tabela</router-link>
     </div>
     <router-view />
-    <v-snackbar bottom right :value="updateExists" :timeout="0" color="primary">
+    <v-snackbar
+      bottom
+      right
+      :value="updateExists"
+      :timeout="-1"
+      color="primary"
+    >
       An update is available
       <v-btn text @click="refreshApp">
         Update

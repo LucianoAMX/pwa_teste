@@ -69,7 +69,7 @@ export default {
     }
   },
   methods: {
-     close() {
+    close() {
       this.$store.dispatch("set_dialog", false);
       this.$nextTick(() => {
         this.editedItem = Object.assign({}, this.defaultItem);

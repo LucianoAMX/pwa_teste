@@ -22,6 +22,7 @@ if (process.env.NODE_ENV === "production") {
     /*updated() {
       console.log("New content is available; please refresh.");
     },*/
+    // When the SW is updated we will dispatch an event we can listen to in our .vue file
     updated(registration) {
       console.log("New content is available; please refresh.");
       document.dispatchEvent(

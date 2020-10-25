@@ -5,24 +5,22 @@
       <router-link to="/about">Tabela</router-link>
     </div>
     <router-view />
-    <v-snackbar
-      bottom
-      right
-      :value="updateExists"
-      :timeout="-1"
-      color="primary"
-    >
-      Nova atualização disponível
+    <v-snackbar bottom right :value="updateExists" :timeout="0" color="primary">
+      An update is available
       <v-btn text @click="refreshApp">
-        update
+        Update
       </v-btn>
     </v-snackbar>
   </v-app>
 </template>
 <script>
 import update from "./mixins/update";
+
 export default {
   name: "App",
+  data: () => ({
+    //
+  }),
   mixins: [update]
 };
 </script>

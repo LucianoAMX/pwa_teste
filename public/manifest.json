@@ -4,7 +4,7 @@
     "theme_color":"#4DBA87",
     "icons": [
       {
-        "src": "windows10/Square71x71Logo.scale-400.png",
+        "src": "img/icons/windows10/Square71x71Logo.scale-400.png",
         "sizes": "284x284"
       },
       {

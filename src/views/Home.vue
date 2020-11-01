@@ -4,7 +4,7 @@
       alt="Vue logo"
       width="200px"
       height="200px"
-      src="../assets/logo.png"
+      src="../assets/minions.png"
     />
     <HelloWorld msg="bem vindo ao PWA" />
   </div>

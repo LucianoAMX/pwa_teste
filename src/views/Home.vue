@@ -1,11 +1,6 @@
 <template>
   <div class="home">
-    <img
-      alt="Vue logo"
-      width="200px"
-      height="200px"
-      src="../assets/logo.png"
-    />
+    <img alt="Vue logo" width="200px" height="200px" src="../assets/logo.png" />
     <HelloWorld msg="bem vindo ao PWA" />
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <v-dialog v-model="$store.getters['get_dialog']" max-width="500px">
+  <v-dialog v-model="dialog" max-width="500px" @change="$emit('open-dialog')">
     <v-card>
       <v-card-title>
         <span class="headline">{{ formTitle }}</span>
@@ -55,37 +55,51 @@
   </v-dialog>
 </template>
 
-
 <script>
 export default {
-  props:{
-    editedItem:{
-
-    }
+  props: {
+    desserts: {}
   },
+  data: () => ({
+    dialog: false,
+    editedIndex: -1,
+    editedItem: {
+      name: "",
+      calories: 0,
+      fat: 0,
+      carbs: 0,
+      protein: 0
+    }
+  }),
   computed: {
     formTitle() {
       return this.editedIndex === -1 ? "New Item" : "Edit Item";
     }
   },
   methods: {
+    open(editedIndex, editedItem) {
+      this.editedIndex = editedIndex;
+      this.editedItem = editedItem;
+      this.dialog = true;
+    },
     close() {
-      this.$store.dispatch("set_dialog", false);
+      this.dialog = false;
       this.$nextTick(() => {
         this.editedItem = Object.assign({}, this.defaultItem);
         this.editedIndex = -1;
       });
     },
-
     save() {
+      console.log(this.editedIndex);
       if (this.editedIndex > -1) {
+        console.log('aqui13')
         Object.assign(this.desserts[this.editedIndex], this.editedItem);
       } else {
+        console.log('aqui12')
         this.desserts.push(this.editedItem);
       }
       this.close();
     }
   }
- 
-}
+};
 </script>

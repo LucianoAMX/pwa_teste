@@ -2,7 +2,7 @@
   <v-dialog v-model="dialog" max-width="500px">
     <v-card>
       <v-card-title>
-        <span class="headline">{{ formTitle }}</span>
+        <span class="headline">teste dois</span>
       </v-card-title>
 
       <v-card-text>
@@ -88,12 +88,11 @@ export default {
       });
     },
     save() {
+      alert(this.desserts)
       console.log(this.editedIndex);
       if (this.editedIndex > -1) {
-        console.log("aqui13");
         Object.assign(this.desserts[this.editedIndex], this.editedItem);
       } else {
-        console.log("aqui12");
         this.desserts.push(this.editedItem);
       }
       this.close();

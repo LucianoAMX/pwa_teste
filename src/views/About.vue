@@ -6,9 +6,7 @@
     class="elevation-1"
   >
     <template v-slot:top>
-      <v-toolbar flat>
-        <dialog-teste :desserts="desserts" ref="nome"></dialog-teste>
-      </v-toolbar>
+      <dialog-juntos ref="nomes"></dialog-juntos>
     </template>
     <template v-slot:[`item.actions`]="{ item }">
       <v-icon small class="mr-2" @click="editItem(item)">
@@ -19,11 +17,11 @@
 </template>
 
 <script>
-import DialogTeste from "@/components/dialogos.vue";
+import DialogJuntos from "@/components/dialogjuntos.vue";
 
 export default {
   components: {
-    DialogTeste
+    DialogJuntos
   },
   data: () => ({
     headers: [
@@ -41,7 +39,11 @@ export default {
     ],
     desserts: []
   }),
-
+  provide() {
+    return {
+      desserts: this.desserts.length
+    };
+  },
   created() {
     this.initialize();
   },
@@ -125,7 +127,7 @@ export default {
     editItem(item) {
       let editedIndex = this.desserts.indexOf(item);
       let editedItem = Object.assign({}, item);
-      this.$refs.nome.open(editedIndex, editedItem);
+      this.$refs.nomes.open(editedIndex, editedItem);
     }
   }
 };
